@@ -1,7 +1,11 @@
-Home, 
-Id dúvidas ID
-Dúvida VARCHAR(200)
-Principais_noticias (relacionamento com notícias)
+CREATE DATABASE home_db;
+\c home_db;
+
+CREATE TABLE Home (
+Id_dúvidas INT PRIMARY KEY AUTO_INCREMENT,
+Dúvida VARCHAR(200),
+Principais_noticias TEXT
+);
 
 INSERT INTO Home (Id_dúvidas, Dúvida, Principais_noticias)
 VALUES 
