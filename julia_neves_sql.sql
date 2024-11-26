@@ -1,16 +1,20 @@
+---criação database dicas_db.
 CREATE DATABASE dicas_db;
-\c dicas_estudo;
+\c dicas_db1;
 
+---criação tabela dicas_estudo.
 CREATE TABLE dicas_estudo (
     id INT PRIMARY KEY,
     titulo VARCHAR(280),
     descrição TEXT,
     categoria VARCHAR(100),
     autor VARCHAR(100),
-    data_criação DATETIME
+    data_criacao TIMESTAMP
 );
 
-INSERT INTO dicas_estudo (id, titulo, descrição, categoria, autor, data_criação);
+
+---inserção de dados na tabela dicas_estudo.
+INSERT INTO dicas_estudo (id, titulo, descrição, categoria, autor, data_criacao) VALUES
 (1, 'Organize-se', 'Organização faz a diferença durante os estudos. Ela favorece consideravelmente os resultados e faz com que você não se perca em meio a conteúdos e tenha um rendimento maior em seu tempo. (Cronograma, anotações, textos e artigos).', 'Organização', 'Julia Neves', '2024-11-19 12:00:00'),
 
 (2, 'Leia os editais', 'Os editais de cada vestibular trazem informações que podem ser valiosas para seus estudos; atente-se para a Bibliografia de referência (profissionais que elaboram as provas costumam identificar a bibliografia de referência, o que auxilia para nortear os conteúdos que você deve aprofundar). Os títulos previstos para as provas relacionadas à literatura também são destacados nos editais. Dessa forma, você não se perde em matéria nenhuma.', 'Preparação', 'Julia Neves', '2024-11-19 12:00:00'),
