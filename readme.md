@@ -34,7 +34,7 @@ Este projeto envolve a criação de um banco de dados  que armazena e gerencia d
 
 ## Diagrama DER
 
-![Diagrama DER](https://via.placeholder.com/500x300.png?text=Diagrama+ER)
+Acesse o link: (https://miro.com/app/board/uXjVKnml_lU=/)
 
 
 
@@ -48,7 +48,7 @@ Para instalar e configurar o banco de dados, siga os passos abaixo:
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/projeto-final-banco.git
+    git clone https://github.com/luschettini/projeto-final-banco.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
@@ -57,8 +57,20 @@ Para instalar e configurar o banco de dados, siga os passos abaixo:
 3. Execute o script de criação do banco de dados:
     ```bash
     mysql -u seu-usuario -p < script_criacao.sql
-    ```
+   ```
+
+### 📸 Conheça o time: 
+
+| 🌟 Julia Neves - Scrum Master | ⭐ Luiza Schettini - (PO) | Giovanna Caron  |
+|--------------------------------|-------------------------------|-----------------|
+| ![Foto Desenvolvedor 1](https://avatars.githubusercontent.com/u/158210262?v=4) | ![Foto Desenvolvedor 2](https://avatars.githubusercontent.com/u/158210596?v=4) | ![Foto Desenvolvedor 3](https://avatars.githubusercontent.com/u/158209996?v=4) |
+
+| Ana C. Freitas  | Luana Domenegheti | Maria Eduarda Parma|
+|-----------------|-------------------|--------------------|
+| ![Foto Desenvolvedor 4](https://avatars.githubusercontent.com/u/158210617?v=4) | ![Foto Desenvolvedor 5](https://avatars.githubusercontent.com/u/158210063?v=4) | ![Foto Desenvolvedor 6](https://avatars.githubusercontent.com/u/158210075?v=4) |
+
 
 ## Contato
 
-Para mais informações, entre em contato pelo email: [seu-email@dominio.com](mailto:seu-email@dominio.com)
+Para mais informações, entre em contato pelo email: [seu-email@dominio.com](mailto:giovanna.c.barros@aluno.senai.br)
+
