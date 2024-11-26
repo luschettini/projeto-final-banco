@@ -1,7 +1,7 @@
-CREATE DATABASE home_db;
+CREATE DATABASE duvidas_db;
 \c home_db;
 
-CREATE TABLE Home (
+CREATE TABLE Duvidas (
 Id_dúvidas INT PRIMARY KEY AUTO_INCREMENT,
 Dúvida VARCHAR(200),
 Principais_noticias TEXT
@@ -39,13 +39,3 @@ VALUES
 (14, 'O que muda na prova de redação da FUVEST em 2024?', 'A FUVEST anunciou que, em 2024, a prova de redação será mais exigente, com a introdução de um tema relacionado a questões sociais e políticas atuais. Os candidatos precisarão demonstrar não apenas domínio da língua portuguesa, mas também capacidade crítica e de argumentação sobre temas relevantes para o cenário atual do Brasil e do mundo.');
 
 (15, 'Quais os cursos de maior demanda no vestibular da UNESP em 2024?', 'Os cursos com maior demanda no vestibular da UNESP em 2024 são Medicina, Direito, Psicologia e Engenharia. De acordo com a instituição, as provas de 2024 terão um foco maior em questões interdisciplinares, e a universidade promete ampliar ainda mais as vagas nos cursos da área de saúde e exatas.');
-
-(16, 'Qual é a nova forma de avaliação no vestibular da UNICAMP para 2024?', 'A UNICAMP, em 2024, vai adotar uma nova forma de avaliação que inclui mais questões de raciocínio lógico e interpretação de textos. A universidade está buscando testar o potencial crítico e analítico dos candidatos, além das competências tradicionais de conhecimento em disciplinas como física e matemática. A mudança visa alinhar o vestibular com as necessidades do mercado de trabalho.');
-
-(17, 'Como a PUC-SP está tornando seu vestibular mais inclusivo em 2024?', 'A PUC-SP, em 2024, está ampliando as oportunidades de ingresso para candidatos de escolas públicas, com o aumento de vagas reservadas para a política de cotas. Além disso, a universidade implementou a prova de conhecimentos gerais para os candidatos, além da redação, para promover uma seleção mais justa e acessível.');
-
-(18, 'Quais as principais mudanças no vestibular da FUVEST para 2024?', 'O vestibular da FUVEST 2024 terá importantes modificações. Entre elas, a mudança no peso das disciplinas, com maior ênfase em biologia, matemática e redação. Além disso, as provas terão um número maior de questões interdisciplinares, com temas atuais da política, economia e meio ambiente. O objetivo é avaliar o pensamento crítico e a formação de conhecimento dos candidatos.');
-
-(19, 'O que a UNESP espera dos candidatos no vestibular de 2024?', 'A UNESP espera dos candidatos para o vestibular de 2024 uma formação sólida em disciplinas tradicionais, como matemática, física, português e ciências humanas. A universidade também tem dado ênfase ao preparo para a prova de redação, que será mais exigente, com temas interdisciplinares, exigindo que os candidatos demonstrem habilidades analíticas e de escrita.');
-
-(20, 'Quais os principais temas abordados no vestibular da UNICAMP para 2024?', 'No vestibular de 2024, a UNICAMP dará maior atenção a temas atuais de caráter social e científico, como mudanças climáticas, desigualdade social e avanços tecnológicos. Além disso, a universidade buscará avaliar a capacidade de argumentação dos candidatos, com questões que envolvem raciocínio crítico e habilidades de interpretação.');
