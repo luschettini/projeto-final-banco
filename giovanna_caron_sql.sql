@@ -50,4 +50,18 @@ VALUES
 ('Inglês', 'Equipe de Inglês', 'https://site-ingles-theta.vercel.app/'),
 ('Artes e E.F', 'Equipe de Artes e E.F', 'https://portal-noticias-html.vercel.app/Portal_Noticias/pages/sobre-conteudos.html');
 
+-- Criação da tabela autores
 
+CREATE TABLE autores (
+    id SERIAL PRIMARY KEY UNIQUE NOT NULL,
+    autor VARCHAR(50) NOT NULL,
+)
+
+INSERT INTO autores (autor)
+VALUES
+('Giovanna Caron'),
+('Luiza Schettini'),
+('Julia Neves'),
+('Maria Eduarda Parma'),
+('Ana Carolina Freitas'),
+('Luana Domeneghetti'),
