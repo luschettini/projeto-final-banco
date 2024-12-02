@@ -3,7 +3,9 @@ CREATE DATABASE duvida_db;
 
 CREATE TABLE Duvidas (
 Id_dúvidas INT PRIMARY KEY AUTO_INCREMENT,
-Dúvida VARCHAR(200)
+id_autor INT,
+Dúvida VARCHAR(200),
+CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 );
 
 INSERT INTO Duvidas (Id_dúvidas, Dúvida, )
