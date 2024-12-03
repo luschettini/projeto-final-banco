@@ -1,6 +1,6 @@
 ---criação database dicas_db.
-CREATE DATABASE dicas_db;
-\c dicas_db1;
+CREATE DATABASE portal_DB;
+\c portal_DB;
 
 ---criação tabela dicas_estudo.
 CREATE TABLE dicas_estudo (
@@ -47,17 +47,17 @@ WHERE categoria = 'Tecnologia para Estudo';
 SELECT * FROM dicas_estudo
 WHERE data_criacao > '2024-11-26;
 
-/*contar quantas dicas cadastradas existem na tabela.*/
-
+---contar quantas dicas cadastradas existem na tabela.
 SELECT COUNT(*) AS total_dicas FROM dicas_estudo;
 
 /*agrupar dica por categoria e contar quantas existem em cada.*/ 
 SELECT categoria, COUNT(*) AS total_dicas
 FROM dicas_estudo
-GROUP BT categoria;
+GROUP BY categoria;
 
-/*buscar dicas com palavra chave no título ou descrição*/
+/*buscar dicas com palavra chave no título ou descrição.*/
 /*Exemplo: Buscar dicas relacionadas a "redação":*/
+
 SELECT * FROM dicas_estudo
 WHERE titulo LIKE '%redação%' OR descrição LIKE '%redação%';
 
