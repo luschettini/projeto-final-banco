@@ -42,3 +42,7 @@ SELECT * FROM dicas_estudo; /*retorna dados da tabela dicas_estudo.*/
 /*selecionar dica específica com a categoria 'tecnologia para estudo'.*/
 SELECT * FROM dicas_estudo 
 WHERE categoria = 'Tecnologia para Estudo';
+
+/*listar todas as dicas com data de criação posterior a 2024-11-26.*/
+SELECT * FROM dicas_estudo
+WHERE data_criacao > '2024-11-26;
