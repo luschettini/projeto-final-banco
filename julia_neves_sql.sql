@@ -46,3 +46,19 @@ WHERE categoria = 'Tecnologia para Estudo';
 /*listar todas as dicas com data de criação posterior a 2024-11-26.*/
 SELECT * FROM dicas_estudo
 WHERE data_criacao > '2024-11-26;
+
+/*contar quantas dicas cadastradas existem na tabela.*/
+
+SELECT COUNT(*) AS total_dicas FROM dicas_estudo;
+
+/*agrupar dica por categoria e contar quantas existem em cada.*/ 
+SELECT categoria, COUNT(*) AS total_dicas
+FROM dicas_estudo
+GROUP BT categoria;
+
+/*buscar dicas com palavra chave no título ou descrição*/
+/*Exemplo: Buscar dicas relacionadas a "redação":*/
+SELECT * FROM dicas_estudo
+WHERE titulo LIKE '%redação%' OR descrição LIKE '%redação%';
+
+
