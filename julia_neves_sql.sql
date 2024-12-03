@@ -34,3 +34,11 @@ INSERT INTO dicas_estudo (id, titulo, descrição, categoria, autor, data_criaca
 (9, '4 aplicativos para organizar seus estudos', 'Passei Direto: estimula a conexão dos estudantes universitários aos conhecimentos em diversas áreas de formação. Nele você encontra conteúdos para Graduação, ENEM, Concursos, OAB e muito mais.Google Keep: Nele, você consegue realizar anotações, criar lembretes, registrar ideias e criar listas de tarefas para armazená-las e encontrá-las de forma rápida e organizada, e até compartilhar com seus colegas de estudos.', 'Tecnologia para Estudo', 'Julia Neves', '2024-11-26 14:59:29'),
 
 (10, '4 aplicativos para organizar seus estudos', 'Geekie: personaliza os seu cronograma de estudos. Nessa plataforma, você poderá realizar um teste virtual que irá gerar um plano de estudo de acordo com suas habilidades e deficiências. A plataforma conta com videoaulas. Estuda.com: é uma opção para se preparar para entrar na faculdade. O aplicativo oferece simulados e permite ao usuário acompanhar o desempenho por meio de estatísticas. Apresenta também questões do Enem e provas de vestibulares de diversas universidades brasileiras.', 'Tecnologia para Estudo', 'Julia Neves', '2024-11-26 15:01:25');
+
+/*teste de query*/
+
+SELECT * FROM dicas_estudo; /*retorna dados da tabela dicas_estudo.*/
+
+/*selecionar dica específica com a categoria 'tecnologia para estudo'.*/
+SELECT * FROM dicas_estudo 
+WHERE categoria = 'Tecnologia para Estudo';
