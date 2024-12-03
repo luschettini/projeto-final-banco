@@ -2,7 +2,7 @@ CREATE DATABASE portal_DB;
 
 \c portal_DB;
 
-CREATE TABLE simulado_questoes (
+CREATE TABLE perguntas (
     id_questao SERIAL PRIMARY KEY UNIQUE NOT NULL,
     ano_prova INTEGER NOT NULL,
     titulo_questao VARCHAR(255),
@@ -19,7 +19,7 @@ CREATE TABLE simulado_questoes (
     resposta_correta TEXT
 );
 
-INSERT INTO simulado_questoes (ano_prova, titulo_questao, texto_questao, imagem, referencia, questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta) VALUES
+INSERT INTO perguntas (ano_prova, titulo_questao, texto_questao, imagem, referencia, questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta) VALUES
 (2014, 'Censura moralista', 
 'Ha tempos que a leitura esta em pauta. E, diz-se, em crise. Comenta-se esta crise, por exemplo, apontando a precariedade das praticas de leitura, lamentando a falta de familiaridade dos jovens com livros, reclamando da falta de bibliotecas em tantos municipios, do preco dos livros em livrarias, num nunca acabar de problemas e de carencias. Mas, de um tempo para ca, pesquisas academicas vem dizendo que talvez nao seja exatamente assim, que brasileiros leem, sim, so que leem livros que as pesquisas tradicionais nao levam em conta. E, tambem de um tempo para ca, politicas educacionais tem tomado a peito investir em livros e em leitura.', 
 NULL, 'LAJOLO, M. Disponivel em: www.estadao.com.br. Acesso em: 2 dez. 2013.', 'Os falantes, nos textos que produzem, sejam orais ou escritos, posicionam-se frente a assuntos que geram consenso ou despertam polemica. No texto, a autora', 'ressalta a importancia de os professores incentivarem os jovens as praticas de leitura.', 
@@ -36,7 +36,7 @@ NULL, 'ASSIS, M. A causa secreta. Disponivel em: www.dominiopublico.gov.br. Aces
 );
 
 
-INSERT INTO simulado_questoes (ano_prova, titulo_questao, texto_questao, imagem, referencia, questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta) VALUES
+INSERT INTO perguntas (ano_prova, titulo_questao, texto_questao, imagem, referencia, questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta) VALUES
 (2017, NULL, 'Joao/Zero (Wagner Moura) é um cientista genial, mas infeliz porque ha 20 anos atras foi humilhado publicamente durante uma festa e perdeu Helena (Alinne Moraes), uma antiga e eterna paixao. Certo dia, uma experiencia com um de seus inventos permite que ele faca uma viagem no tempo, retornando para aquela época e podendo interferir no seu destino. Mas quando ele retorna, descobre que sua vida mudou totalmente e agora precisa encontrar um jeito de mudar essa historia, nem que para isso tenha que voltar novamente ao passado. Sera que ele conseguira acertar as coisas?', NULL, 'Disponível em: http://adorocinema.com. Acesso em: 4 out. 2011.', 'Qual aspecto da organizacao gramatical atualiza os eventos apresentados na resenha, contribuindo para despertar o interesse do leitor pelo filme?', 'O emprego do verbo haver, em vez de ter, em ha 20 anos atrás foi humilhado.', 'A descricao dos fatos com verbos no presente do indicativo, como retorna e descobre.', 'A repeticao do emprego da conjunçao mas para contrapor ideias.', 'A finalizaçao do texto com a frase de efeito Será que ele conseguirá acertar as coisas?.', 'b) A descriçao dos fatos com verbos no presente do indicativo, como retorna e descobre.'
 ),
 (2014, NULL, 'Os diagramas abaixo ilustram a frequencia percentual de indivíduos com diferentes tamanhos de bico, para duas espécies de tentilhões (genero Geospiza) encontradas em tres ilhas do arquipélago de Galápagos, no oceano Pacífico. As frequencias de indivíduos com bicos de diferentes profundidades (indicadas pelas setas) sao mostradas para cada espécie, em cada ilha. Sabendo-se que ambas as espécies se alimentam de sementes, indique a interpretaçao correta para os resultados apresentados.', 'https://luschettini.github.io/site-portaleducacional/media/img/img-simulado/questao06.png', 'Adaptado de Pianka, E.R. Evolutionary Ecology. Harper & Row, Publishers, New York, 397 pp. 1978. Em: http://goose.ycp.edu/~kkleiner/ecology/lectureimages/15finches.jpg', NULL, 
@@ -50,7 +50,7 @@ INSERT INTO simulado_questoes (ano_prova, titulo_questao, texto_questao, imagem,
 (2018, NULL, 'A utilizacao de extratos de origem natural tem recebido a atencao de pesquisadores em todo o mundo, principalmente nos países em desenvolvimento que sao altamente acometidos por doencas infecciosas e parasitárias. Um bom exemplo dessa utilizacao sao os produtos de origem botanica que combatem insetos.', NULL, 'ENEM', 'O uso desses produtos pode auxiliar no controle da:', 'esquistossomose.', 'leptospirose.', 'leishmaniose.', 'hanseníase.', 'c) leishmaniose. A leishmaniose é uma doenca causada por protozoário, sendo transmitida através da picada de um inseto vetor. Existe medicacao para prevenir a doenca somente em seres humanos.');
 
 
-INSERT INTO simuladoQuestões (ano_prova, titulo_questao, texto_questao, imagem, referencia, questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta) VALUES
+INSERT INTO perguntas (ano_prova, titulo_questao, texto_questao, imagem, referencia, questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta) VALUES
 (2017, 'Projecao Gall-Peters', 
 'Esse mapa mostra o tamanho e a proporcao de paises, continentes e oceanos com mais precisao. Uma das principais mudancas e que a Europa aparece muito menor do que se via antes em comparacao com a Africa, que e muito maior.', 
 NULL, 'Disponivel em: www.bbc.com/portuguese/internacional-39349115> Acesso em: 10 jan. 2023', 'Os sistemas de projecoes cartograficas constituem-se de formulas matematicas que transformam as coordenadas geograficas, a partir de uma superficie esferica (elipsoidal), em coordenadas planas, mantendo correspondencia entre elas. O uso deste artificio geometrico das projecoes consegue reduzir as deformacoes, mas nunca elimina-las. A projecao de Gall-Peters corresponde a uma projecao', 'afilatica.', 'apolitica', 'azimutal equidistante.', 'conforme.', 
